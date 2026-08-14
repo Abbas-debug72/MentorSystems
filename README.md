@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MentorSystems — Company Website
 
-## Getting Started
+Official website for **MentorSystems**, a private software engineering company delivering
+websites, web applications, mobile apps and AI automation to clients worldwide.
 
-First, run the development server:
+Built with **Next.js (App Router) + TypeScript + Tailwind CSS + Framer Motion**.
+Dark, techy, premium design with lightweight animations. Deploys to Vercel with zero config.
+
+## Pages
+
+- `/` — Home (hero, services, why us, process, testimonials, CTA)
+- `/services` — Web, web apps, mobile apps & AI automation (make.com, n8n, VAPI, RAG)
+- `/about` — Story, mission, values, global reach
+- `/contact` — Contact form (v1: opens the visitor's email client via `mailto:`) + direct info
+
+## Documentation (Obsidian vault)
+
+The `docs/` folder is an Obsidian vault — open it in Obsidian to browse the connected notes:
+
+- `01-prd` — product requirements
+- `02-design-system` — colors, typography, components, motion
+- `03-tech-stack` — technology decisions
+- `04-sitemap-and-copy` — pages and content
+- `05-roadmap` — build phases + Vercel runbook
+
+## Run locally
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev       # http://localhost:3000
+npm run build     # production build + typecheck
+npm run start     # serve the built site
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deploy to Vercel
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Push this repo to GitHub.
+2. In [vercel.com](https://vercel.com) → **Add New Project** → import the repo.
+3. Next.js is auto-detected → **Deploy**.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Or with the CLI: `vercel` (first run links the project), then `vercel --prod`.
 
-## Learn More
+## Project structure
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+src/
+  app/          # routes: layout, page (home), services, about, contact
+  components/   # navbar, footer, hero, service-card, contact-form, reveal, icons…
+  data/         # site.ts (config) + services.ts (single source of service content)
+docs/           # Obsidian vault (documentation)
+```

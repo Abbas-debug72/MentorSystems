@@ -24,6 +24,13 @@
 .DS_Store
 *.pem
 
+# obsidian local config & scratch (not project content)
+.obsidian/
+docs/Untitled.base
+docs/Untitled.canvas
+docs/Untitled 1.canvas
+docs/2026-08-15.md
+
 # debug
 npm-debug.log*
 yarn-debug.log*
