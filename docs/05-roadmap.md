@@ -23,8 +23,8 @@ PRD, design system, tech stack, sitemap/copy, roadmap — the files in this vaul
 - [x] `npm run build` passes clean
 - [x] Lint passes; all routes verified (HTTP 200, correct titles)
 
-### Phase 2 — Deploy to Vercel
-- [ ] Push repo to GitHub (or use Vercel CLI)
+### Phase 2 — Deploy to Vercel (in progress)
+- [x] Push repo to GitHub (or use Vercel CLI) — pushed to `github.com/Abbas-debug72/MentorSystems` on `main`
 - [ ] Import repo in Vercel dashboard → auto-detects Next.js
 - [ ] Confirm production URL, enable preview deployments
 - [ ] Point custom domain (optional)
