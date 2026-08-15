@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { motion, useReducedMotion } from "framer-motion";
+// `m` (not `motion`) works with the LazyMotion provider — see motion-provider.tsx
+import { m as motion, useReducedMotion } from "framer-motion";
 import { ArrowRightIcon, ServerIcon, SparklesIcon, CheckIcon } from "@/components/icons";
 
 const ease = [0.21, 0.47, 0.32, 0.98] as const;
