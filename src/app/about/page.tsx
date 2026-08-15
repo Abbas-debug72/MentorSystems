@@ -47,7 +47,7 @@ export default function AboutPage() {
       <section className="relative overflow-hidden">
         <div className="orb -top-32 right-1/4 h-80 w-80 bg-indigo-600/20" />
         <div className="bg-grid absolute inset-0" />
-        <div className="relative mx-auto w-full max-w-6xl px-6 pb-16 pt-36 sm:px-8 sm:pt-44">
+        <div className="relative mx-auto w-full max-w-6xl px-6 pb-16 pt-30 sm:px-8 sm:pt-36">
           <Reveal>
             <p className="font-mono text-xs uppercase tracking-[0.25em] text-indigo-300/80">
               {"// "}about us

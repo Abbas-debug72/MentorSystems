@@ -22,7 +22,7 @@ export function Hero() {
       <div className="orb top-24 right-0 h-80 w-80 bg-cyan-500/15" />
       <div className="bg-grid absolute inset-0" />
 
-      <div className="relative mx-auto w-full max-w-6xl px-6 pb-20 pt-36 sm:px-8 sm:pt-44">
+      <div className="relative mx-auto w-full max-w-6xl px-6 pb-20 pt-30 sm:px-8 sm:pt-36">
         <div className="grid items-center gap-14 lg:grid-cols-[1.15fr_0.85fr]">
           <div>
             <motion.div {...fadeUp(0)}>
