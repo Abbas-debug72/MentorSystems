@@ -1,6 +1,6 @@
 # Mentor Systems — Digital Portfolio Showcase
 
-> **Web design & development that performs.** Five production-grade websites, each built for a different industry — every one a complete, deploy-ready product with its own visual identity, engineered to professional standards.
+> **Web design & development that performs.** Seven production-grade websites, each built for a different industry — every one a complete, deploy-ready product with its own visual identity, engineered to professional standards.
 
 **Last updated:** August 2026
 
@@ -15,24 +15,26 @@
 5. [Site 03 — Obsidian, Fashion Retail](#site-03--obsidian-fashion-retail)
 6. [Site 04 — Sterling & Hale, Law Firm](#site-04--sterling--hale-law-firm)
 7. [Site 05 — Meridian Estates, Real Estate](#site-05--meridian-estates-real-estate)
-8. [Engineering Standards](#engineering-standards)
-9. [Get in Touch](#get-in-touch)
+8. [Site 06 — Forge Fitness, Gym](#site-06--forge-fitness-gym)
+9. [Site 07 — Hawthorne Academy, School](#site-07--hawthorne-academy-school)
+10. [Engineering Standards](#engineering-standards)
+11. [Get in Touch](#get-in-touch)
 
 ---
 
 ## About This Portfolio
 
-Mentor Systems builds modern websites that look distinctive and perform reliably. The five concepts in this document demonstrate the range of our work — from candlelit fine dining to luxury real estate — each with a tailored identity rather than a template reskin.
+Mentor Systems builds modern websites that look distinctive and perform reliably. The seven concepts in this document demonstrate the range of our work — from candlelit fine dining to luxury real estate, from a high-energy gym to a private school — each with a tailored identity rather than a template reskin.
 
 **Technology, common to every site:**
 
-| Layer | Choice |
-|-------|--------|
-| Framework | Next.js (App Router) — React-based, industry standard |
-| Language | TypeScript — type-safe, fewer bugs in production |
-| Styling | Tailwind CSS — custom, responsive design systems |
-| Deployment | Vercel — global CDN, instant deploys from source control |
-| Source control | Public GitHub repositories (links included per site) |
+| Layer          | Choice                                                   |
+| -------------- | -------------------------------------------------------- |
+| Framework      | Next.js (App Router) — React-based, industry standard    |
+| Language       | TypeScript — type-safe, fewer bugs in production         |
+| Styling        | Tailwind CSS — custom, responsive design systems         |
+| Deployment     | Vercel — global CDN, instant deploys from source control |
+| Source control | Public GitHub repositories (links included per site)     |
 
 Every site is **fully responsive** (mobile, tablet, desktop), **accessible** (WCAG AA), **fast** (90+ Lighthouse performance targets), and **SEO-ready** (metadata, Open Graph, sitemaps, structured data). All copy and photography are tasteful placeholders, ready to be replaced with client assets.
 
@@ -40,15 +42,17 @@ Every site is **fully responsive** (mobile, tablet, desktop), **accessible** (WC
 
 ## Portfolio at a Glance
 
-| # | Industry | Concept | Live URL | Lighthouse (mobile / desktop) |
-|---|----------|---------|----------|-------------------------------|
-| 01 | Fine Dining Restaurant | **Ember & Vine** | [ember-vine site](https://restaurant.gat6.vercel.app) | 92 / 98 |
-| 02 | Dental Clinic | **Brightside Dental** | [brightside-dental site](https://dental-clinic.gat6.vercel.app) | 92 / 87 |
-| 03 | Fashion Retail | **Obsidian** | [obsidian site](https://retail-shop.gat6.vercel.app) | 82 / 96 |
-| 04 | Corporate Law | **Sterling & Hale** | [sterling-hale site](https://law-firm.gat6.vercel.app) | 86 / 97 |
-| 05 | Luxury Real Estate | **Meridian Estates** | [meridian-estates site](https://real-estate.gat6.vercel.app) | 87 / 85 |
+| #   | Industry                    | Concept               | Live URL                                                        | Lighthouse (mobile / desktop) |
+| --- | --------------------------- | --------------------- | --------------------------------------------------------------- | ----------------------------- |
+| 01  | Fine Dining Restaurant      | **Ember & Vine**      | [ember-vine site](https://restaurant.gat6.vercel.app)           | 92 / 98                       |
+| 02  | Dental Clinic               | **Brightside Dental** | [brightside-dental site](https://dental-clinic.gat6.vercel.app) | 92 / 87                       |
+| 03  | Fashion Retail              | **Obsidian**          | [obsidian site](https://retail-shop.gat6.vercel.app)            | 82 / 96                       |
+| 04  | Corporate Law               | **Sterling & Hale**   | [sterling-hale site](https://law-firm.gat6.vercel.app)          | 86 / 97                       |
+| 05  | Luxury Real Estate          | **Meridian Estates**  | [meridian-estates site](https://real-estate.gat6.vercel.app)    | 87 / 85                       |
+| 06  | Strength & Conditioning Gym | **Forge Fitness**     | [forge-fitness site](https://gym.gat6.vercel.app)               | TBD — stable runner           |
+| 07  | Private K-12 School         | **Hawthorne Academy** | [hawthorne-academy site](https://school.gat6.vercel.app)        | TBD — stable runner           |
 
-> **A note on scores:** measured with Lighthouse (the industry-standard performance audit) in August 2026. Mobile scores can vary several points with network and host load; desktop numbers are the most stable. Final scores are re-confirmed on a stable runner before launch.
+> **A note on scores:** measured with Lighthouse (the industry-standard performance audit) in August 2026. Mobile scores can vary several points with network and host load; desktop numbers are the most stable. Sites 06–07 are measured on a stable runner at launch; final scores are re-confirmed before they're listed.
 
 ---
 
@@ -162,19 +166,63 @@ A gallery-first concept for a luxury brokerage, where properties are presented l
 
 ---
 
+## Site 06 — Forge Fitness, Gym
+
+**Industry:** Strength & Conditioning Gym
+
+- **Live site:** [https://gym.gat6.vercel.app](https://gym.gat6.vercel.app)
+- **Source code:** [github.com/Abbas-debug72/gym](https://github.com/Abbas-debug72/gym)
+
+A high-energy concept for a strength & conditioning gym built on community and results — dark, loud, and engineered to convert browsers into members.
+
+**What's inside:**
+
+- Filterable class grid (Strength, HIIT, Conditioning, Yoga, Recovery) with a schedule strip and motion ticker
+- **Membership flow** — three tiers (Essential / Pro / Elite) with a validated, rate-limited join form
+- Coach profiles with credentials and focus areas, testimonials, and stats band
+- Industrial identity: charcoal concrete, volt-lime accents, bold condensed uppercase headlines
+
+**Design language:** Oswald with Space Grotesk — industrial gym energy with sharp edges and heavy numerals.
+
+**Performance:** Lighthouse **TBD on a stable runner** — all static pages, self-hosted fonts, lazy-loaded imagery.
+
+---
+
+## Site 07 — Hawthorne Academy, School
+
+**Industry:** Private K-12 School
+
+- **Live site:** [https://school.gat6.vercel.app](https://school.gat6.vercel.app)
+- **Source code:** [github.com/Abbas-debug72/school](https://github.com/Abbas-debug72/school)
+
+A warm, academically serious concept for a private K-12 day school — small classes, dedicated faculty, and a three-division structure presented as one continuous path.
+
+**What's inside:**
+
+- Three academic divisions (Lower / Middle / Upper School) with programs and approach
+- Faculty profiles with roles, subjects, and credentials
+- **Admissions inquiry flow** — four-step process plus a validated, rate-limited request form
+- Warm academic identity: deep navy, cream and terracotta with serif headlines
+
+**Design language:** Lora with Karla — warm, human, and unmistakably academic.
+
+**Performance:** Lighthouse **TBD on a stable runner** — all static pages, self-hosted fonts, lazy-loaded imagery.
+
+---
+
 ## Engineering Standards
 
 Every Mentor Systems build meets the same non-functional bar — this is what "production-grade" means in practice:
 
-| Area | What we do |
-|------|-----------|
-| **Security** | Form inputs validated and sanitized server-side, spam honeypots, hardened security headers, zero secrets in client code |
-| **Performance** | Optimized images with lazy loading, self-hosted fonts (no layout shift), static page generation, 90+ Lighthouse targets |
-| **Reliability** | Custom 404 and error pages, graceful form failure states, no unhandled errors |
-| **Accessibility** | WCAG AA color contrast, full keyboard navigation, screen-reader support, descriptive alt text on every image |
-| **SEO** | Per-page titles and metadata, Open Graph social cards, XML sitemaps, robots.txt, structured data for rich search results |
+| Area              | What we do                                                                                                               |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| **Security**      | Form inputs validated and sanitized server-side, spam honeypots, hardened security headers, zero secrets in client code  |
+| **Performance**   | Optimized images with lazy loading, self-hosted fonts (no layout shift), static page generation, 90+ Lighthouse targets  |
+| **Reliability**   | Custom 404 and error pages, graceful form failure states, no unhandled errors                                            |
+| **Accessibility** | WCAG AA color contrast, full keyboard navigation, screen-reader support, descriptive alt text on every image             |
+| **SEO**           | Per-page titles and metadata, Open Graph social cards, XML sitemaps, robots.txt, structured data for rich search results |
 
-**Coming next:** five more concepts are in progress — fitness & gym, salon & spa, photography studio, home services & contractor, and café & coffee shop — to be added to this portfolio as they launch.
+**Coming next:** four more concepts are in progress — salon & spa, photography studio, home services & contractor, and café & coffee shop — to be added to this portfolio as they launch.
 
 ---
 
@@ -184,4 +232,4 @@ We'd be glad to walk you through any of these sites live, discuss adapting a con
 
 ---
 
-*© 2026 Mentor Systems. All concepts, design and code shown here are original work. Placeholder imagery courtesy of Unsplash-style open sources; all placeholder copy is ready to be replaced with client content.*
+_© 2026 Mentor Systems. All concepts, design and code shown here are original work. Placeholder imagery courtesy of Unsplash-style open sources; all placeholder copy is ready to be replaced with client content._

@@ -38,12 +38,18 @@ export function PortfolioCard({ site }: PortfolioCardProps) {
         </h3>
         <p className="mt-3 text-sm leading-relaxed text-mist">{site.summary}</p>
 
-        <span
-          title={`Lighthouse score — mobile ${site.lighthouse.mobile} / desktop ${site.lighthouse.desktop}`}
-          className="mt-5 inline-flex w-fit items-center rounded-full border border-white/10 bg-white/5 px-2.5 py-1 font-mono text-[11px] text-white/80"
-        >
-          Lighthouse {site.lighthouse.mobile} / {site.lighthouse.desktop}
-        </span>
+        {site.lighthouse ? (
+          <span
+            title={`Lighthouse score — mobile ${site.lighthouse.mobile} / desktop ${site.lighthouse.desktop}`}
+            className="mt-5 inline-flex w-fit items-center rounded-full border border-white/10 bg-white/5 px-2.5 py-1 font-mono text-[11px] text-white/80"
+          >
+            Lighthouse {site.lighthouse.mobile} / {site.lighthouse.desktop}
+          </span>
+        ) : (
+          <span className="mt-5 inline-flex w-fit items-center rounded-full border border-white/10 bg-white/5 px-2.5 py-1 font-mono text-[11px] text-white/80">
+            Lighthouse — TBD on stable runner
+          </span>
+        )}
 
         <div className="mt-auto flex items-center gap-5 pt-6 text-sm">
           <span className="inline-flex items-center gap-1.5 font-medium text-indigo-300 transition group-hover:text-white">

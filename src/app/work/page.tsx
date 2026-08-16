@@ -46,9 +46,9 @@ export default function WorkPage() {
         </div>
         <Reveal delay={0.15}>
           <p className="mt-12 text-center text-sm text-mist">
-            More concepts in progress — fitness &amp; gym, salon &amp; spa,
-            photography studio, home services and café — coming to this
-            portfolio as they launch.
+            More concepts in progress — salon &amp; spa, photography studio,
+            home services &amp; contractor, and café &amp; coffee shop — coming to
+            this portfolio as they launch.
           </p>
         </Reveal>
       </section>
