@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
 import { ServiceCard } from "@/components/service-card";
-import { PortfolioCard } from "@/components/portfolio-card";
 import { CtaSection } from "@/components/cta-section";
-import { BotIcon, CheckIcon } from "@/components/icons";
+import { ArrowRightIcon, BotIcon, CheckIcon } from "@/components/icons";
 import { services, aiTools } from "@/data/services";
-import { portfolioSites } from "@/data/portfolio";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -48,22 +47,17 @@ export default function ServicesPage() {
             </Reveal>
           ))}
         </div>
-      </section>
-
-      {/* Portfolio showcase */}
-      <section className="mx-auto w-full max-w-6xl px-6 py-24 sm:px-8">
-        <SectionHeading
-          eyebrow="our work, live"
-          title="Production-grade websites we've built"
-          lead="Five complete concept sites, each for a different industry — every one a deploy-ready product with its own visual identity, engineered to professional standards."
-        />
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {portfolioSites.map((site, i) => (
-            <Reveal key={site.slug} delay={(i % 3) * 0.08}>
-              <PortfolioCard site={site} />
-            </Reveal>
-          ))}
-        </div>
+        <Reveal delay={0.15}>
+          <div className="mt-10 text-center">
+            <Link
+              href="/work"
+              className="group inline-flex items-center gap-1.5 text-sm font-medium text-indigo-300 transition hover:text-white"
+            >
+              See our work in action
+              <ArrowRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+            </Link>
+          </div>
+        </Reveal>
       </section>
 
       {/* AI automation deep dive */}

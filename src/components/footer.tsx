@@ -43,6 +43,11 @@ export function Footer() {
           </h3>
           <ul className="mt-4 space-y-3 text-sm">
             <li>
+              <Link href="/work" className="text-mist transition hover:text-white">
+                Our Work
+              </Link>
+            </li>
+            <li>
               <Link href="/about" className="text-mist transition hover:text-white">
                 About Us
               </Link>
