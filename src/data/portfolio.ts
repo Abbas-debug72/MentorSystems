@@ -6,7 +6,6 @@ export type PortfolioSite = {
   industry: string;
   summary: string;
   liveUrl: string;
-  sourceUrl: string;
   /** Lighthouse scores, mobile / desktop */
   lighthouse: { mobile: number; desktop: number };
 };
@@ -20,7 +19,6 @@ export const portfolioSites: PortfolioSite[] = [
     summary:
       "Candlelit editorial design with a course-by-course tasting menu and a validated, spam-protected reservation system.",
     liveUrl: "https://restaurant.gat6.vercel.app",
-    sourceUrl: "https://github.com/Abbas-debug72/restaurant",
     lighthouse: { mobile: 92, desktop: 98 },
   },
   {
@@ -31,7 +29,6 @@ export const portfolioSites: PortfolioSite[] = [
     summary:
       "A calm, spa-calm identity with a full service catalogue and a validated appointment request flow.",
     liveUrl: "https://dental-clinic.gat6.vercel.app",
-    sourceUrl: "https://github.com/Abbas-debug72/dental-clinic",
     lighthouse: { mobile: 92, desktop: 87 },
   },
   {
@@ -42,7 +39,6 @@ export const portfolioSites: PortfolioSite[] = [
     summary:
       "Gallery-grade storefront with hover-swap product cards and a working shopping cart that persists across visits.",
     liveUrl: "https://retail-shop.gat6.vercel.app",
-    sourceUrl: "https://github.com/Abbas-debug72/retail-shop",
     lighthouse: { mobile: 82, desktop: 96 },
   },
   {
@@ -53,7 +49,6 @@ export const portfolioSites: PortfolioSite[] = [
     summary:
       "Authoritative, discreet design with six practice areas and a validated, rate-limited consultation request form.",
     liveUrl: "https://law-firm.gat6.vercel.app",
-    sourceUrl: "https://github.com/Abbas-debug72/law-firm",
     lighthouse: { mobile: 86, desktop: 97 },
   },
   {
@@ -64,7 +59,6 @@ export const portfolioSites: PortfolioSite[] = [
     summary:
       "Gallery-first brokerage with live property filters, rich listing pages and a schedule-a-tour request flow.",
     liveUrl: "https://real-estate.gat6.vercel.app",
-    sourceUrl: "https://github.com/Abbas-debug72/real-estate",
     lighthouse: { mobile: 87, desktop: 85 },
   },
 ];
