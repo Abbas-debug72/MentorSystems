@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
 import { ServiceCard } from "@/components/service-card";
+import { PortfolioCard } from "@/components/portfolio-card";
 import { CtaSection } from "@/components/cta-section";
 import { BotIcon, CheckIcon } from "@/components/icons";
 import { services, aiTools } from "@/data/services";
+import { portfolioSites } from "@/data/portfolio";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -43,6 +45,22 @@ export default function ServicesPage() {
           {services.map((service, i) => (
             <Reveal key={service.slug} delay={(i % 2) * 0.08}>
               <ServiceCard service={service} />
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      {/* Portfolio showcase */}
+      <section className="mx-auto w-full max-w-6xl px-6 py-24 sm:px-8">
+        <SectionHeading
+          eyebrow="our work, live"
+          title="Production-grade websites we've built"
+          lead="Five complete concept sites, each for a different industry — every one a deploy-ready product with its own visual identity, engineered to professional standards."
+        />
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {portfolioSites.map((site, i) => (
+            <Reveal key={site.slug} delay={(i % 3) * 0.08}>
+              <PortfolioCard site={site} />
             </Reveal>
           ))}
         </div>

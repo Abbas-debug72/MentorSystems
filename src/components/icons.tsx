@@ -135,12 +135,33 @@ export function ServerIcon(props: IconProps) {
   );
 }
 
+export function PortfolioIcon(props: IconProps) {
+  return (
+    <svg {...base(props)}>
+      <rect x="3" y="3" width="18" height="18" rx="2" />
+      <circle cx="9" cy="9" r="2" />
+      <path d="m21 15-3.09-3.09a2 2 0 0 0-2.83 0L6 21" />
+    </svg>
+  );
+}
+
+export function ExternalLinkIcon(props: IconProps) {
+  return (
+    <svg {...base(props)}>
+      <path d="M14 4h6v6" />
+      <path d="M20 4 10 14" />
+      <path d="M20 14v5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19V6a1.5 1.5 0 0 1 1.5-1.5H10" />
+    </svg>
+  );
+}
+
 export const serviceIcons: Record<
-  "web" | "webapp" | "mobile" | "ai",
+  "web" | "webapp" | "mobile" | "ai" | "portfolio",
   (props: IconProps) => React.JSX.Element
 > = {
   web: GlobeIcon,
   webapp: LayersIcon,
   mobile: SmartphoneIcon,
   ai: BotIcon,
+  portfolio: PortfolioIcon,
 };

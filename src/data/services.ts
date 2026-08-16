@@ -4,7 +4,7 @@ export type Service = {
   tagline: string;
   description: string;
   features: string[];
-  icon: "web" | "webapp" | "mobile" | "ai";
+  icon: "web" | "webapp" | "mobile" | "ai" | "portfolio";
   accent: string;
 };
 
@@ -68,6 +68,21 @@ export const services: Service[] = [
     ],
     icon: "ai",
     accent: "from-emerald-400 to-cyan-500",
+  },
+  {
+    slug: "custom-website-portfolio",
+    title: "Custom Website Portfolios",
+    tagline: "Five industries, five distinct identities",
+    description:
+      "Complete, production-grade concept sites built end-to-end — fine dining, dental, fashion, law and real estate — each with its own tailored visual identity, live on Vercel.",
+    features: [
+      "Five live concept sites, each for a different industry",
+      "Tailored visual identity per site — never template reskins",
+      "Interactive flows built in: reservations, carts, filters, bookings",
+      "90+ Lighthouse targets, WCAG AA accessible, SEO-ready",
+    ],
+    icon: "portfolio",
+    accent: "from-amber-400 to-orange-500",
   },
 ];
 
