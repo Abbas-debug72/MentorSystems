@@ -5,9 +5,18 @@ import { CtaSection } from "@/components/cta-section";
 import { portfolioSites } from "@/data/portfolio";
 
 export const metadata: Metadata = {
-  title: "Our Work",
+  title: "Our Work — Web Design & Development Portfolio",
   description:
-    "Five production-grade websites built by MentorSystems — fine dining, dental, fashion, law and real estate — each with its own visual identity, live on Vercel.",
+    "Five production-grade websites built by Mentor Systems from Lahore, Pakistan — fine dining, dental, fashion, law and real estate — each with its own visual identity, live on Vercel.",
+  alternates: {
+    canonical: "/work",
+  },
+  keywords: [
+    "Mentor Systems portfolio",
+    "web design portfolio Lahore",
+    "website development projects Pakistan",
+    "web design Lahore",
+  ],
 };
 
 export default function WorkPage() {

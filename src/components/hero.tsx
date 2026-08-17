@@ -44,10 +44,10 @@ export function Hero() {
               {...fadeUp(0.16)}
               className="mt-6 max-w-xl text-base leading-relaxed text-mist sm:text-lg"
             >
-              MentorSystems is a private software engineering company working with
-              clients worldwide. From high-performance websites and mobile apps to
-              AI agents that automate your operations — we design, build and ship
-              it end to end.
+              MentorSystems is a private software engineering company based in
+              Lahore, Pakistan, working with clients worldwide. From
+              high-performance websites and mobile apps to AI agents that automate
+              your operations — we design, build and ship it end to end.
             </motion.p>
 
             <motion.div

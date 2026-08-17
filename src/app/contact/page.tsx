@@ -5,9 +5,18 @@ import { MailIcon, ClockIcon, MapPinIcon, CheckIcon } from "@/components/icons";
 import { site, navLinks } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
+  title: "Contact Us — Lahore, Pakistan",
   description:
-    "Get in touch with MentorSystems. Tell us about your project — websites, web apps, mobile apps or AI automation — and we'll reply within 24 hours.",
+    "Get in touch with Mentor Systems in Lahore, Pakistan. Tell us about your project — websites, web apps, mobile apps or AI automation — and we'll reply within 24 hours.",
+  alternates: {
+    canonical: "/contact",
+  },
+  keywords: [
+    "contact Mentor Systems Lahore",
+    "hire software company Lahore",
+    "software development quote Pakistan",
+    "AI automation services Lahore",
+  ],
 };
 
 const contactInfo = [
@@ -25,7 +34,7 @@ const contactInfo = [
   {
     icon: MapPinIcon,
     label: "Location",
-    value: "Working worldwide 🌍",
+    value: "Lahore, Pakistan 🌍 serving clients worldwide",
   },
 ];
 

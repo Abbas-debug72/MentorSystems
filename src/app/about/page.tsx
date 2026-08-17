@@ -5,9 +5,18 @@ import { CtaSection } from "@/components/cta-section";
 import { GlobeIcon, MapPinIcon, ClockIcon, SparklesIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "About Us — Software Company in Lahore, Pakistan",
   description:
-    "MentorSystems is a private software engineering company delivering websites, apps and AI automation to clients worldwide.",
+    "Mentor Systems is a software engineering company based in Lahore, Pakistan, delivering websites, apps and AI automation to clients worldwide.",
+  alternates: {
+    canonical: "/about",
+  },
+  keywords: [
+    "about Mentor Systems",
+    "software company Lahore Pakistan",
+    "AI automation company Pakistan",
+    "software engineering studio Lahore",
+  ],
 };
 
 const values = [
@@ -24,7 +33,7 @@ const values = [
   {
     icon: MapPinIcon,
     title: "Global, remote-friendly",
-    text: "We work across time zones with async-first processes, so your project moves forward around the clock.",
+    text: "Headquartered in Lahore, Pakistan, we work across time zones with async-first processes, so your project moves forward around the clock.",
   },
   {
     icon: ClockIcon,
@@ -72,11 +81,11 @@ export default function AboutPage() {
               Our story
             </h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-mist">
-              <p>
-                MentorSystems was founded as a focused engineering studio — a
-                small, senior team that could take full ownership of a product
-                instead of passing it between vendors.
-              </p>
+            <p>
+              MentorSystems was founded in Lahore, Pakistan as a focused
+              engineering studio — a small, senior team that could take full
+              ownership of a product instead of passing it between vendors.
+            </p>
               <p>
                 That promise hasn&apos;t changed. Today we design and build websites,
                 web applications and mobile apps, and we help companies automate

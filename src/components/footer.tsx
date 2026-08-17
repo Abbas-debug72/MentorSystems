@@ -17,8 +17,8 @@ export function Footer() {
             {site.name}
           </Link>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-mist">
-            A private software engineering company delivering websites, apps and
-            AI automation to clients worldwide.
+            A private software engineering company based in Lahore, Pakistan,
+            delivering websites, apps and AI automation to clients worldwide.
           </p>
         </div>
 

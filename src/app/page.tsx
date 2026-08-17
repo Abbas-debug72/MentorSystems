@@ -1,4 +1,6 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+import { site } from "@/data/site";
 import { Hero } from "@/components/hero";
 import { Marquee } from "@/components/marquee";
 import { Reveal } from "@/components/reveal";
@@ -9,6 +11,21 @@ import { ProcessSteps } from "@/components/home/process-steps";
 import { Testimonials } from "@/components/home/testimonials";
 import { ArrowRightIcon } from "@/components/icons";
 import { services } from "@/data/services";
+
+export const metadata: Metadata = {
+  description: site.description,
+  alternates: {
+    canonical: "/",
+  },
+  keywords: [
+    "Mentor Systems",
+    "Mentor Systems Lahore",
+    "Mentor Systems Pakistan",
+    "software company Lahore",
+    "AI automation Lahore",
+    "website development Pakistan",
+  ],
+};
 
 const pillars = [
   {

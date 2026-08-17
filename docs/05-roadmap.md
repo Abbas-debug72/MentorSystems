@@ -32,7 +32,7 @@ PRD, design system, tech stack, sitemap/copy, roadmap — the files in this vaul
 ### Phase 3 — Polish & growth (later)
 - [ ] Real contact-form backend (Resend / Formspree) — replaces mailto
 - [ ] Real testimonials, case studies, client logos
-- [ ] SEO: metadata, `sitemap.ts`, `robots.ts`, Open Graph images
+- [x] SEO: metadata, `sitemap.ts`, `robots.ts`, Open Graph images, JSON-LD structured data, canonical URLs, local (Lahore/Pakistan) copy
 - [ ] Blog / services detail pages
 - [ ] Vercel Analytics
 - [ ] i18n (multi-language) if needed

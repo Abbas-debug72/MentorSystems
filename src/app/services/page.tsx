@@ -8,9 +8,21 @@ import { ArrowRightIcon, BotIcon, CheckIcon } from "@/components/icons";
 import { services, aiTools } from "@/data/services";
 
 export const metadata: Metadata = {
-  title: "Services",
+  title: "Software Development & AI Automation Services in Lahore",
   description:
-    "Website development, web applications, mobile apps and AI automation — make.com, n8n, VAPI agents and RAG bots — delivered by MentorSystems worldwide.",
+    "Website development, web applications, mobile apps and AI automation — make.com, n8n, VAPI agents and RAG bots — delivered by Mentor Systems from Lahore, Pakistan to clients worldwide.",
+  alternates: {
+    canonical: "/services",
+  },
+  keywords: [
+    "software development services Lahore",
+    "website development Lahore",
+    "AI automation Pakistan",
+    "make.com automation",
+    "n8n workflows",
+    "VAPI voice agents",
+    "RAG AI bots",
+  ],
 };
 
 export default function ServicesPage() {
@@ -32,7 +44,8 @@ export default function ServicesPage() {
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-mist sm:text-lg">
               One partner for your entire digital product — built with modern
-              stacks, delivered worldwide and supported long after launch.
+              stacks, delivered to clients worldwide from our base in Lahore,
+              Pakistan, and supported long after launch.
             </p>
           </Reveal>
         </div>
