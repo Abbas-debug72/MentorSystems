@@ -3,6 +3,7 @@ import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
 import { CtaSection } from "@/components/cta-section";
 import { GlobeIcon, MapPinIcon, ClockIcon, SparklesIcon } from "@/components/icons";
+import { TeamCard } from "@/components/team-card";
 
 export const metadata: Metadata = {
   title: "About Us — Software Company in Lahore, Pakistan",
@@ -112,6 +113,25 @@ export default function AboutPage() {
                 </div>
               ))}
             </dl>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* Team */}
+      <section className="mx-auto w-full max-w-6xl px-6 py-24 sm:px-8">
+        <SectionHeading
+          eyebrow="meet the team"
+          title="The people behind MentorSystems"
+          lead="A small, senior team that takes full ownership — from first call to launch and beyond."
+        />
+        <div className="mx-auto mt-14 grid max-w-md gap-6 sm:max-w-none sm:grid-cols-2 lg:grid-cols-3">
+          <Reveal>
+            <TeamCard
+              name="Abbas"
+              role="Founder & CEO"
+              photo="/team/founder.jpg"
+              bio="Leads every project hands-on — from architecture and AI automation to delivery — making sure each build meets the bar MentorSystems was founded on."
+            />
           </Reveal>
         </div>
       </section>
