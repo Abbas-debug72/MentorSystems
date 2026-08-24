@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { site } from "@/data/site";
 import { services } from "@/data/services";
-import { MailIcon } from "@/components/icons";
+import { MailIcon, PhoneIcon } from "@/components/icons";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -75,6 +75,13 @@ export function Footer() {
           >
             <MailIcon className="h-4 w-4" />
             {site.email}
+          </a>
+          <a
+            href={`tel:${site.phoneIntl}`}
+            className="mt-3 inline-flex items-center gap-2 text-sm text-mist transition hover:text-white"
+          >
+            <PhoneIcon className="h-4 w-4" />
+            {site.phone}
           </a>
           <p className="mt-3 text-sm text-mist">{site.location}</p>
           <p className="mt-1 text-sm text-mist">Replies within 24 hours</p>

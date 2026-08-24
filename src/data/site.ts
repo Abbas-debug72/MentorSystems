@@ -2,12 +2,15 @@ export const site = {
   name: "MentorSystems",
   legalName: "MentorSystems",
   url: "https://mentor-systems-gat6.vercel.app",
-  email: "hello@mentorsystems.com",
+  email: "ak9528991@gmail.com",
+  phone: "0345 8003374",
+  phoneIntl: "+923458003374",
   tagline: "Software Engineering & AI Automation",
   description:
     "MentorSystems is a software engineering and AI automation company based in Lahore, Pakistan, delivering websites, web applications, mobile apps and AI automation — including make.com, n8n, VAPI voice agents and RAG knowledge bots — to clients worldwide.",
-  location: "Lahore, Pakistan — serving clients worldwide",
+  location: "Model Town, Lahore, Pakistan — serving clients worldwide",
   address: {
+    streetAddress: "Model Town",
     addressLocality: "Lahore",
     addressRegion: "Punjab",
     addressCountry: "PK",

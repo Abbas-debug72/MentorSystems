@@ -99,6 +99,14 @@ export function MailIcon(props: IconProps) {
   );
 }
 
+export function PhoneIcon(props: IconProps) {
+  return (
+    <svg {...base(props)}>
+      <path d="M5.5 4h3l1.5 4-2 1.5a13 13 0 0 0 6.5 6.5L16 14l4 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 3.5 6.2 2 2 0 0 1 5.5 4Z" />
+    </svg>
+  );
+}
+
 export function MapPinIcon(props: IconProps) {
   return (
     <svg {...base(props)}>

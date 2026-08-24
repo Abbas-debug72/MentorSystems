@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Reveal } from "@/components/reveal";
 import { ContactForm } from "@/components/contact-form";
-import { MailIcon, ClockIcon, MapPinIcon, CheckIcon } from "@/components/icons";
+import { MailIcon, PhoneIcon, ClockIcon, MapPinIcon, CheckIcon } from "@/components/icons";
 import { site, navLinks } from "@/data/site";
 
 export const metadata: Metadata = {
@@ -32,9 +32,15 @@ const contactInfo = [
     value: "Within 24 hours, every time",
   },
   {
+    icon: PhoneIcon,
+    label: "Call us",
+    value: site.phone,
+    href: `tel:${site.phoneIntl}`,
+  },
+  {
     icon: MapPinIcon,
     label: "Location",
-    value: "Lahore, Pakistan 🌍 serving clients worldwide",
+    value: "Model Town, Lahore, Pakistan 🌍 serving clients worldwide",
   },
 ];
 
