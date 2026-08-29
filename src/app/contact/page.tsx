@@ -75,15 +75,7 @@ export default function ContactPage() {
                 Start the conversation
               </h2>
               <p className="mt-2 text-sm text-mist">
-                Fill this in and your email app will open with everything
-                pre-filled — or write to us directly at{" "}
-                <a
-                  href={`mailto:${site.email}`}
-                  className="text-indigo-300 underline-offset-4 hover:underline"
-                >
-                  {site.email}
-                </a>
-                .
+                Fill this in and we&apos;ll get back to you within 24 hours.
               </p>
               <div className="mt-8">
                 <ContactForm />
