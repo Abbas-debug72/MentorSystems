@@ -8,7 +8,6 @@ import { SectionHeading } from "@/components/section-heading";
 import { ServiceCard } from "@/components/service-card";
 import { CtaSection } from "@/components/cta-section";
 import { ProcessSteps } from "@/components/home/process-steps";
-import { Testimonials } from "@/components/home/testimonials";
 import { ArrowRightIcon } from "@/components/icons";
 import { services } from "@/data/services";
 
@@ -98,7 +97,6 @@ export default function Home() {
       </section>
 
       <ProcessSteps />
-      <Testimonials />
       <CtaSection />
     </>
   );

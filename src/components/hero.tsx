@@ -68,25 +68,6 @@ export function Hero() {
                 Explore services
               </Link>
             </motion.div>
-
-            <motion.dl
-              {...fadeUp(0.32)}
-              className="mt-12 flex flex-wrap gap-x-12 gap-y-6"
-            >
-              {[
-                ["100+", "projects delivered"],
-                ["20+", "countries served"],
-                ["4", "service lines"],
-              ].map(([value, label]) => (
-                <div key={label}>
-                  <dt className="sr-only">{label}</dt>
-                  <dd className="text-2xl font-semibold tracking-tight text-white">
-                    {value}
-                  </dd>
-                  <dd className="mt-1 text-sm text-mist">{label}</dd>
-                </div>
-              ))}
-            </motion.dl>
           </div>
 
           <motion.div

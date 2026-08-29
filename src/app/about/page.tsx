@@ -43,13 +43,6 @@ const values = [
   },
 ];
 
-const stats = [
-  ["100+", "projects delivered"],
-  ["20+", "countries served"],
-  ["4", "service lines"],
-  ["24h", "response time"],
-];
-
 export default function AboutPage() {
   return (
     <>
@@ -74,47 +67,30 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Story + stats */}
+      {/* Story */}
       <section className="mx-auto w-full max-w-6xl px-6 pb-24 sm:px-8">
-        <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
-          <Reveal>
-            <h2 className="text-2xl font-semibold tracking-tight text-white sm:text-3xl">
-              Our story
-            </h2>
-            <div className="mt-5 space-y-4 text-base leading-relaxed text-mist">
+        <Reveal>
+          <h2 className="text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+            Our story
+          </h2>
+          <div className="mt-5 space-y-4 text-base leading-relaxed text-mist">
+          <p>
+            MentorSystems was founded in Lahore, Pakistan as a focused
+            engineering studio — a small, senior team that could take full
+            ownership of a product instead of passing it between vendors.
+          </p>
             <p>
-              MentorSystems was founded in Lahore, Pakistan as a focused
-              engineering studio — a small, senior team that could take full
-              ownership of a product instead of passing it between vendors.
+              That promise hasn&apos;t changed. Today we design and build websites,
+              web applications and mobile apps, and we help companies automate
+              their operations with AI agents — powered by make.com, n8n, VAPI
+              and RAG knowledge bots.
             </p>
-              <p>
-                That promise hasn&apos;t changed. Today we design and build websites,
-                web applications and mobile apps, and we help companies automate
-                their operations with AI agents — powered by make.com, n8n, VAPI
-                and RAG knowledge bots.
-              </p>
-              <p>
-                Being private and independent means we answer to one thing: the
-                quality of what we ship.
-              </p>
-            </div>
-          </Reveal>
-          <Reveal delay={0.1}>
-            <dl className="grid grid-cols-2 gap-4">
-              {stats.map(([value, label]) => (
-                <div
-                  key={label}
-                  className="glass rounded-2xl p-6 text-center sm:p-8"
-                >
-                  <dd className="text-3xl font-semibold tracking-tight text-gradient">
-                    {value}
-                  </dd>
-                  <dt className="mt-2 text-sm text-mist">{label}</dt>
-                </div>
-              ))}
-            </dl>
-          </Reveal>
-        </div>
+            <p>
+              Being private and independent means we answer to one thing: the
+              quality of what we ship.
+            </p>
+          </div>
+        </Reveal>
       </section>
 
       {/* Team */}
@@ -124,7 +100,7 @@ export default function AboutPage() {
           title="The people behind MentorSystems"
           lead="A small, senior team that takes full ownership — from first call to launch and beyond."
         />
-        <div className="mx-auto mt-14 grid max-w-md gap-6 sm:max-w-none sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto mt-14 grid max-w-md justify-center gap-6">
           <Reveal>
             <TeamCard
               name="Abbas"
